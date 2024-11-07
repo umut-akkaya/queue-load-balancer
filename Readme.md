@@ -1,4 +1,4 @@
-# RABBITMQ QUEUE LOAD BALANCER
+# RabbitMQ Queue LoadBalancer
 This project aims to create a load balancer between multiple queues by utilizing **round robin algorithm**. The LoadBalancer works as an intermediary and routes the messages to another queue. This queue then is consumed by consumers.
 ## How does it Work?
 It sequentally iterates the registered queues and push the messages one by one to loab balancer queue. In over to avoid lb queue beign overflowed with same origin messages, lb queue size is set to 3. You can change this size in the code.
