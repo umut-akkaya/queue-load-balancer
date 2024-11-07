@@ -7,7 +7,7 @@ It sequentally iterates the registered queues and push the messages one by one t
 `RABBITMQ_HOST`: Rabbitmq server<br />
 `RABBITMQ_USER`: Rabbitmq auth user<br />
 `RABBITMQ_PASSWORD`: Rabbitmq auth password<br />
-`RABBITMQ_LB_QUEUE_NAME`: The queue name where the message will be forwarded. This is the queue name which your consumer will consume.<br />
+`RABBITMQ_LB_QUEUE_NAME`: The queue name where the message will be forwarded to. This is the queue name which your consumer will consume.<br />
 `RABBITMQ_REGISTERED_QUEUE_LIST`: Coma separated queue list which you want to load balance with.<br />
 `LB_WAIT_INTERVAL`: Loadbalancer wait interval to avoid high CPU utilization.
 ## Proof of Concept
