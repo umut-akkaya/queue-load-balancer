@@ -11,7 +11,7 @@ It sequentally iterates the registered queues and push the messages one by one t
 `RABBITMQ_REGISTERED_QUEUE_LIST`: Coma separated queue list which you want to load balance with.<br />
 `LB_WAIT_INTERVAL`: Loadbalancer wait interval to avoid high CPU utilization.
 ## Proof of Concept
-Following workflow show how the loadbalancer work. Copy the following docker compose file to `docker-compose.yaml` file
+Following workflow show how the loadbalancer work. Copy the following docker compose file to <br />`docker-compose.yaml` file
 
 ```yaml
 services:
