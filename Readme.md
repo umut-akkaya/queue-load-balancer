@@ -4,11 +4,11 @@ This project aims to create a load balancer between multiple queues by utilizing
 It sequentally iterates the registered queues and push the messages one by one to load balancer queue. In order to avoid lb queue beign overflowed with same origin messages, lb queue size is set to 3. You can change this size in the code.
 ![Diagram shows how load balancer works. ](rsc/lb.png)
 ## Environment Variables
-**RABBITMQ_HOST**: Rabbitmq server
-**RABBITMQ_USER**: Rabbitmq auth user
-**RABBITMQ_PASSWORD**: Rabbitmq auth password
-**RABBITMQ_LB_QUEUE_NAME**: The queue name where the message will be forwarded. This is the queue name which your consumer will consume.
-**RABBITMQ_REGISTERED_QUEUE_LIST**: Coma separated queue list which you want to load balance with.
+**RABBITMQ_HOST**: Rabbitmq server<br />
+**RABBITMQ_USER**: Rabbitmq auth user<br />
+**RABBITMQ_PASSWORD**: Rabbitmq auth password<br />
+**RABBITMQ_LB_QUEUE_NAME**: The queue name where the message will be forwarded. This is the queue name which your consumer will consume.<br />
+**RABBITMQ_REGISTERED_QUEUE_LIST**: Coma separated queue list which you want to load balance with.<br />
 **"LB_WAIT_INTERVAL"**: Loadbalancer wait interval to avoid high CPU utilization.
 ## Proof of Concept
 Following workflow show how the loadbalancer work. Copy the following docker compose file to `docker-compose.yaml` file
